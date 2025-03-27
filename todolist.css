@@ -1,0 +1,180 @@
+.main-container{
+    display: flex;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 20%;
+}
+.right-container{
+
+    width: 100%;
+}
+.item{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.count{
+    margin-right: 10px;
+}
+.count p{
+    /* padding:5px; */
+   
+    align-items: center;
+    text-align: center;
+    background-color: rgba(156, 151, 151, 0.365);
+    border-radius: 50%;
+    padding: 6px;
+}
+.groups{
+    display: flex;
+    gap:10px;
+    padding: 4px;
+   
+}
+.group img{
+    width: 50px;
+    height: 50px;
+    background-color:  rgba(156, 151, 151, 0.365);
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.group span{
+    color:rgba(156, 151, 151, 0.365); ;
+}
+.new-list{
+    display: flex;
+    align-items: center;
+    background-color:rgba(156, 151, 151, 0.365) ;
+    padding: 8px 2px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 6px;
+
+}
+.new-task{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin: 20px;
+  
+
+}
+.shortcut{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+   
+}
+
+.cmd-icon, .key-icon {
+    
+    margin-right: 2px;
+    background: #f1f1f1;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    color:rgb(31, 25, 25);
+
+}
+.new-task .cmd-icon, .key-icon {
+    
+    margin-right: 2px;
+   
+    padding: 8px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+/* right-container */
+.right-container{
+    padding: 20px 60px;
+}
+.today{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-day{
+    display: flex;
+    align-items: center;
+     gap:10px;
+}
+.first{
+ padding-right: 60px;
+ padding-left: 10px;
+   background-color: white;
+   border-radius: 5px;
+   
+}
+.second{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+.display-activities{
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid black;
+    width: 100%;
+   
+    padding: 20px;
+    background-color: #f9f9f9; 
+}
+.task {
+    padding: 10px;
+    background: #d4dfea;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+}
+
+.task strong {
+    color: #007bff;
+}
+/* form */
+#taskform{
+    display: none;
+    padding:10px;
+    border:1px solid #ccc;
+    background-color:black;
+    color: white;
+    flex-direction: column;
+    gap:10px;
+    width: 50%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.menu button{
+ background-color: greenyellow;
+ padding: 10px;
+ border-style: none;
+ 
+}
+.menu input{
+    padding: 10px;
+}
+.deleteBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}

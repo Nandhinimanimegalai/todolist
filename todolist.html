@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TODO LIST</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+     
+        <div class="left-container">
+            <h3>Categories</h3>
+            <div class="item">
+                <div>
+                    <p>🏠 Home</p>
+                </div>
+                <div class="count">
+                    <p id="home-count">0</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <p>💼 Work</p>
+                </div>
+                <div class="count">
+                    <p id="work-count">0</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <p>📝 Personal</p>
+                </div>
+                <div class="count">
+                    <p id="personal-count">0</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <p>🍏 Diet</p>
+                </div>
+                <div class="count">
+                    <p id="diet-count">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="today">
+                <div class="gud-mrng">
+                    <h2>GOOD MORNING,Nandhini!👋</h2>
+                    <p id="currentDate"></p>
+                </div>
+                <div class="filter-day">
+                    <div class="first">
+                        <p><span><i class="fa-solid fa-angle-down"></i></span>Today</p>
+                    </div>
+                    <div class="second">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="new-task">
+                <span>+ Create new task</span>
+                <div class="shortcut">
+                    <span class="cmd-icon">⌘</span>
+                    <span class="key-icon">N</span>
+                </div>
+            </div>
+            <h3>TASK LIST</h3>
+            <div class="display-activities">
+
+            </div>
+
+        </div>
+        <!-- date container -->
+        <div id="taskform" class="taskForm">
+            <div class="menu" id="close-form" style="font-size: 30px;margin-left: auto;">
+                <i class="fa-solid fa-xmark" style="color: #ef2525;"></i>
+            </div>
+            <div class="menu">
+                <label>Task Name</label>
+                <input type="text" id="taskName"><br>
+            </div>
+            <div class="menu">
+                <label>Task Date</label>
+                <input type="date" id="taskDate"><br>
+            </div>
+            <div class="menu">
+                <label for="startTime">Start time:</label>
+                <input type="time" id="startTime">
+            </div>
+            <div class="menu">
+                <label for="endTime">End Time: </label>
+                <input type="time" id="endTime"><br>
+            </div>
+            <div class="menu">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="todolist.js"></script>
+
+</body>
+
+</html>
